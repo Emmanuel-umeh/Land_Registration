@@ -139,7 +139,7 @@ window.addEventListener('load', async () => {
         console.log(property.image1)
 
 
-        CandidateArray.push({
+        LandArray.push({
             id: property.id,
             creatorAddress: property.creatorAddress,
             image1: property.image1,
