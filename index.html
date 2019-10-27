@@ -20,6 +20,7 @@
 	<link rel="stylesheet" href="assets/css/media-queries.css">
 	<link rel="stylesheet" href="assets/css/scrollbar.css" >
 	<link rel="stylesheet" href="assets/css/loader.css">
+	<link rel="stylesheet" href="assets/css/register.css">
 	<!-- Favicon and touch icons -->
 	<link rel="shortcut icon" href="assets/ico/favicon.png">
 	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
@@ -73,6 +74,22 @@ loading-bar-spinner								width="128" height="128"></div>
 
 		</div>
 	</div>
+
+	<div id="progress"></div>
+
+<div class="center">
+  <div id="register">
+
+    <i id="progressButton" class="ion-android-arrow-forward next"></i>
+
+    <div id="inputContainer">
+      <input id="inputField" required autofocus />
+      <label id="inputLabel"></label>
+      <div id="inputProgress"></div>
+    </div>
+
+  </div>
+</div>
 
 
 	<script id="template" type="x-tmpl-mustache">
@@ -179,6 +196,7 @@ loading-bar-spinner								width="128" height="128"></div>
 	<script src="https://unpkg.com/@aeternity/aepp-sdk/dist/aepp-sdk.browser-script.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.js"></script>
 	<script src="index.js"></script>
+	<script src="assets/js/register.js"></script>
 
 
 
