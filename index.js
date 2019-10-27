@@ -207,6 +207,6 @@ $('.regBtn').click(async function(){
     // // e.preventDefault();
   
     $("#loading-bar-spinner").hide();
-    location.reload(true);
+    // location.reload(true);
   
   });
