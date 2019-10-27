@@ -73,7 +73,6 @@ var client = null;
 var LandLength = 0;
 
 
-
 function renderProduct() {
     LandArray = LandArray.sort(function (a, b) {
         return b.Price - a.Price
@@ -123,7 +122,10 @@ async function contractCall(func, args, value) {
 
 
 
-window.addEventListener('load', async () => {
+
+for(reload = 0; reload<2; reload++){
+  window.addEventListener('load', async () => {
+    reload = reload+1
     $("#loading-bar-spinner").show();
 
     client = await Ae.Aepp()
@@ -212,3 +214,5 @@ $('.regBtns').click(async function(){
     // location.reload(true);
   
   });
+}
+
