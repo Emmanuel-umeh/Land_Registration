@@ -121,7 +121,51 @@ async function contractCall(func, args, value) {
     return calledSet;
 }
 
-$('.regBtn').click(async function(){
+
+
+window.addEventListener('load', async () => {
+    $("#loading-bar-spinner").show();
+
+    client = await Ae.Aepp()
+
+    LandLength = await callStatic('getLandLength', []);
+
+
+    for (let i = 1; i <= LandLength; i++) {
+        const property = await callStatic('getLand', [i]);
+
+        console.log("for loop reached", "pushing to array")
+
+        console.log(property.name)
+        console.log(property.description)
+        console.log(property.image1)
+
+
+        LandArray.push({
+            id: property.id,
+            creatorAddress: property.creatorAddress,
+            image1: property.image1,
+            image2: property.image2,
+
+
+            name: property.name,
+            description: property.description,
+            price: property.price
+        })
+
+        // vote
+        //   $(function () {
+        //     $("i").click(function () {
+        //       $("i,span").toggleClass("press", 1000);
+        //     });
+        //   });
+        // }
+        renderProduct();
+        $("#loading-bar-spinner").hide();
+    }
+});
+
+$('.regBtns').click(async function(){
     $("#loading-bar-spinner").show();
     console.log("Button Clicked")
     const land_name = ($('#Regname').val());
@@ -168,46 +212,3 @@ $('.regBtn').click(async function(){
     // location.reload(true);
   
   });
-
-window.addEventListener('load', async () => {
-    $("#loading-bar-spinner").show();
-
-    client = await Ae.Aepp()
-
-    LandLength = await callStatic('getLandLength', []);
-
-
-    for (let i = 1; i <= LandLength; i++) {
-        const property = await callStatic('getLand', [i]);
-
-        console.log("for loop reached", "pushing to array")
-
-        console.log(property.name)
-        console.log(property.description)
-        console.log(property.image1)
-
-
-        LandArray.push({
-            id: property.id,
-            creatorAddress: property.creatorAddress,
-            image1: property.image1,
-            image2: property.image2,
-
-
-            name: property.name,
-            description: property.description,
-            price: property.price
-        })
-
-        // vote
-        //   $(function () {
-        //     $("i").click(function () {
-        //       $("i,span").toggleClass("press", 1000);
-        //     });
-        //   });
-        // }
-        renderProduct();
-        $("#loading-bar-spinner").hide();
-    }
-});
-
