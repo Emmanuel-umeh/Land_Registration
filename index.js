@@ -181,7 +181,7 @@ $('.regBtn').click(async function(){
     console.log("SAVED TO THE DB", new_land)
   
     LandArray.push({
-      id: new_land.id,
+      id: LandArray.length + 1,
       image1: new_land.image1,
       image2: new_land.image2,
   
