@@ -123,8 +123,8 @@ async function contractCall(func, args, value) {
 
 
 
-for(reload = 1; reload<2; reload++){
-  window.addEventListener('load', async () => {
+
+window.addEventListener('load', async () => {
     reload = reload+1
     $("#loading-bar-spinner").show();
 
@@ -166,7 +166,7 @@ for(reload = 1; reload<2; reload++){
         $("#loading-bar-spinner").hide();
     }
 });
-}
+
 
 $('.regBtns').click(async function(){
   $("#loading-bar-spinner").show();
