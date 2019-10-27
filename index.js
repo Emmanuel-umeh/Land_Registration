@@ -177,10 +177,10 @@ $('.regBtn').click(async function(){
     console.log("Image2:",land_image2)
     
   
-    const new_land = await contractCall('createland', [land_image1, land_image2, land_name,land_description, land_price],40000);
+    const new_land = await contractCall('createLand', [land_image1, land_image2, land_name,land_description, land_price],40000);
     console.log("SAVED TO THE DB", new_land)
   
-    landArray.push({
+    LandArray.push({
       id: new_land.id,
       image1: new_land.image1,
       image2: new_land.image2,
