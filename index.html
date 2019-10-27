@@ -23,7 +23,8 @@
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     </head>
 
@@ -89,7 +90,7 @@
 	        <div class="container">
 	            <div class="row">
 	                <div class="col section-1 section-description wow fadeIn">
-	                    <h2>Section 1</h2>
+	                    <h2>Land Details</h2>
 	                    <div class="divider-1 wow fadeInUp"><span></span></div>
 	                </div>
 	            </div>
@@ -98,12 +99,13 @@
                 		<div class="row">
                 			<div class="col-md-4">
 			                	<div class="section-1-box-icon">
-			                		<i class="fas fa-magic"></i>
+										<i class="fa fa-picture-o" aria-hidden="true"></i>
 			                	</div>
 		                	</div>
 	                		<div class="col-md-8">
-	                    		<h3>Branding</h3>
-	                    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+								<h3>Owners Details</h3>
+								<p>Owners Address : {{creatorAddress}}</p>
+	                    		<p>{{description}}</p>
 	                    	</div>
 	                    </div>
                     </div>
@@ -114,12 +116,6 @@
 			                		<i class="fas fa-cog"></i>
 			                	</div>
 		                	</div>
-	                		<div class="col-md-8">
-	                    		<h3>Web design</h3>
-	                    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-	                    	</div>
-	                    </div>
-                    </div>
                     <div class="col-md-4 section-1-box wow fadeInUp">
 	                	<div class="row">
                 			<div class="col-md-4">
@@ -129,7 +125,7 @@
 		                	</div>
 	                		<div class="col-md-8">
 	                    		<h3>Social media</h3>
-	                    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+	                    		<p>{{creatorAddress}}</p>
 	                    	</div>
 	                    </div>
                     </div>
