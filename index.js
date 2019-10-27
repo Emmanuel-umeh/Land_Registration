@@ -207,6 +207,6 @@ $('.regBtn').click(async function(){
     // // e.preventDefault();
   
     $("#loading-bar-spinner").hide();
-    window.location.href = "https://emmanuel-umeh.github.io/Land_Registration/html";
+    location.reload(true);
   
   });
