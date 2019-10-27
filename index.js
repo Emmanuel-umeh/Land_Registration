@@ -193,18 +193,18 @@ $('.regBtn').click(async function(){
   
     renderProductList();
     
-      //This will clear the value in all scenarious
-      var name_input = document.getElementById("name")
-          name_input.value =""
-      var image_input = document.getElementById("image1")
-          url_input.value =""
-      var image_input = document.getElementById("image2")
-         image_input.value = ""
-      var image_input = document.getElementById("image3")
-         image_input.value = ""
-      var image_input = document.getElementById("message")
-         image_input.value = ""
-    // e.preventDefault();
+    //   //This will clear the value in all scenarious
+    //   var name_input = document.getElementById("name")
+    //       name_input.value =""
+    //   var image_input = document.getElementById("image1")
+    //       url_input.value =""
+    //   var image_input = document.getElementById("image2")
+    //      image_input.value = ""
+    //   var image_input = document.getElementById("image3")
+    //      image_input.value = ""
+    //   var image_input = document.getElementById("message")
+    //      image_input.value = ""
+    // // e.preventDefault();
   
     $("#loading-bar-spinner").hide();
     location.reload(true)
