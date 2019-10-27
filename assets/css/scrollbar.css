@@ -1,5 +1,6 @@
 #scrollbar{
-    overflow-x: auto;
+    overflow-y: auto;
     max-height: 100vh;
     min-height: 100vh;
+    
 }
