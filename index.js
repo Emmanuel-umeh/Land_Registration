@@ -166,53 +166,53 @@ for(reload = 0; reload<2; reload++){
         $("#loading-bar-spinner").hide();
     }
 });
+}
 
 $('.regBtns').click(async function(){
-    $("#loading-bar-spinner").show();
-    console.log("Button Clicked")
-    const land_name = ($('#Regname').val());
-    const land_image1 = ($("#Regimg1").val());
-    const land_image2 = ($("#Regimg2").val());
-    const land_price = ($("#regPrice").val());
-    const land_description = ($("#Regdescription").val());
-    console.log("-------------------------------------")
-    console.log("Name:",land_name)
-    console.log("image1:",land_image1)
-    console.log("Image2:",land_image2)
-    
+  $("#loading-bar-spinner").show();
+  console.log("Button Clicked")
+  const land_name = ($('#Regname').val());
+  const land_image1 = ($("#Regimg1").val());
+  const land_image2 = ($("#Regimg2").val());
+  const land_price = ($("#regPrice").val());
+  const land_description = ($("#Regdescription").val());
+  console.log("-------------------------------------")
+  console.log("Name:",land_name)
+  console.log("image1:",land_image1)
+  console.log("Image2:",land_image2)
   
-    const new_land = await contractCall('createLand', [land_image1, land_image2, land_name,land_description, land_price],40000);
-    console.log("SAVED TO THE DB", new_land)
+
+  const new_land = await contractCall('createLand', [land_image1, land_image2, land_name,land_description, land_price],40000);
+  console.log("SAVED TO THE DB", new_land)
+
+  LandArray.push({
+    id: LandArray.length + 1,
+    image1: new_land.image1,
+    image2: new_land.image2,
+
+    name: new_land.name,
+    description: new_land.description,
+    price: new_land.price
+  })
+
+
+  renderProduct();
   
-    LandArray.push({
-      id: LandArray.length + 1,
-      image1: new_land.image1,
-      image2: new_land.image2,
-  
-      name: new_land.name,
-      description: new_land.description,
-      price: new_land.price
-    })
-  
-  
-    renderProduct();
-    
-    //   //This will clear the value in all scenarious
-    //   var name_input = document.getElementById("name")
-    //       name_input.value =""
-    //   var image_input = document.getElementById("image1")
-    //       url_input.value =""
-    //   var image_input = document.getElementById("image2")
-    //      image_input.value = ""
-    //   var image_input = document.getElementById("image3")
-    //      image_input.value = ""
-    //   var image_input = document.getElementById("message")
-    //      image_input.value = ""
-    // // e.preventDefault();
-  
-    $("#loading-bar-spinner").hide();
-    // location.reload(true);
-  
-  });
-}
+  //   //This will clear the value in all scenarious
+  //   var name_input = document.getElementById("name")
+  //       name_input.value =""
+  //   var image_input = document.getElementById("image1")
+  //       url_input.value =""
+  //   var image_input = document.getElementById("image2")
+  //      image_input.value = ""
+  //   var image_input = document.getElementById("image3")
+  //      image_input.value = ""
+  //   var image_input = document.getElementById("message")
+  //      image_input.value = ""
+  // // e.preventDefault();
+
+  $("#loading-bar-spinner").hide();
+  // location.reload(true);
+
+});
 
