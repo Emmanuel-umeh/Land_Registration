@@ -123,7 +123,7 @@ async function contractCall(func, args, value) {
 
 
 
-for(reload = 0; reload<2; reload++){
+for(reload = 1; reload<2; reload++){
   window.addEventListener('load', async () => {
     reload = reload+1
     $("#loading-bar-spinner").show();
