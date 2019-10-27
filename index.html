@@ -28,6 +28,9 @@
 	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
 	<link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet'
+		type='text/css'>
+	<link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
 
 
 </head>
@@ -75,20 +78,35 @@
 		</div>
 	</div>
 
-	<div id="progress"></div>
 
-	<div class="center">
-		<div id="register">
+	<!-- registration form -->
+	<div class="testbox">
+		<h1>Registration</h1>
 
-			<i id="progressButton" class="ion-android-arrow-forward next"></i>
-
-			<div id="inputContainer">
-				<input id="inputField"  />
-				<label id="inputLabel" required autofucos></label>
-				<div id="inputProgress"></div>
+		<form action="/">
+			<hr>
+			<div class="accounttype">
+				<input type="radio" value="None" id="radioOne" name="account" checked />
+				<label for="radioOne" class="radio" chec>Personal</label>
+				<input type="radio" value="None" id="radioTwo" name="account" />
+				<label for="radioTwo" class="radio">Company</label>
 			</div>
-
-		</div>
+			<hr>
+			<label id="icon" for="name"><i class="icon-envelope "></i></label>
+			<input type="text" name="name" id="name" placeholder="Email" required />
+			<label id="icon" for="name"><i class="icon-user"></i></label>
+			<input type="text" name="name" id="name" placeholder="Name" required />
+			<label id="icon" for="name"><i class="icon-shield"></i></label>
+			<input type="password" name="name" id="name" placeholder="Password" required />
+			<div class="gender">
+				<input type="radio" value="None" id="male" name="gender" checked />
+				<label for="male" class="radio" chec>Male</label>
+				<input type="radio" value="None" id="female" name="gender" />
+				<label for="female" class="radio">Female</label>
+			</div>
+			<p>By clicking Register, you agree on our <a href="#">terms and condition</a>.</p>
+			<a href="#" class="button">Register</a>
+		</form>
 	</div>
 
 	<!-- Footer -->
@@ -106,7 +124,7 @@
 
 	</footer>
 
-	
+
 
 
 	<script id="template" type="x-tmpl-mustache">
@@ -179,10 +197,10 @@
 			{{/LandArray}}
 	</script>
 
-	
+
 
 	<!-- Javascript -->
-	
+
 	<script src="assets/js/jquery-3.3.1.min.js"></script>
 
 	<script src="assets/js/jquery-migrate-3.0.0.min.js"></script>
@@ -192,20 +210,20 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
 		integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
 	</script>
-	
-	
+
+
 	<script src="assets/js/jquery.backstretch.min.js"></script>
 	<script src="assets/js/wow.min.js"></script>
 	<script src="assets/js/waypoints.min.js"></script>
 	<script src="assets/js/scripts.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	
+
 	<script src="https://unpkg.com/@aeternity/aepp-sdk/dist/aepp-sdk.browser-script.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.js"></script>
 	<script src="assets/js/register.js"></script>
 	<script src="index.js"></script>
 	<script src="assets/js/loader.js"></script>
-	
+
 
 
 
