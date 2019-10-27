@@ -191,7 +191,7 @@ $('.regBtn').click(async function(){
     })
   
   
-    renderProductList();
+    renderProduct();
     
     //   //This will clear the value in all scenarious
     //   var name_input = document.getElementById("name")
@@ -207,6 +207,6 @@ $('.regBtn').click(async function(){
     // // e.preventDefault();
   
     $("#loading-bar-spinner").hide();
-    window.location.href = "index.html";
+    window.location.href = "https://emmanuel-umeh.github.io/Land_Registration/html";
   
   });
