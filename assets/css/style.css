@@ -130,6 +130,10 @@ img { max-width: 100%; }
 
 .section-3-box h3 { margin-top: 0; padding: 0 0 10px 0; }
 
+#formBody{
+	color: #aaa;
+}
+
 
 /***** Footer *****/
 
