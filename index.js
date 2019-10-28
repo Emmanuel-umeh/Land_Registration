@@ -125,7 +125,7 @@ async function contractCall(func, args, value) {
 
 
 window.addEventListener('load', async () => {
-    reload = reload+1
+    
     $("#loading-bar-spinner").show();
 
     client = await Ae.Aepp()
