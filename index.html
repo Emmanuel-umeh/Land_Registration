@@ -50,7 +50,7 @@
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item">
 						<a class="nav-link scroll-link" href="#top-content">Top</a>
-						<a class="nav-link" href="register.html">Register Land</a>
+						<!-- <a class="nav-link" href="register.html">Register Land</a> -->
 					</li>
 				</ul>
 			</div>
@@ -87,47 +87,49 @@
 
 		<div class="testbox">
 			<h1>Registration</h1>
+
+			<div id = "formBody">
+				
+					<hr>
+					<div class="accounttype">
+						<input type="radio" value="None" id="radioOne" name="account" checked />
+						<label for="radioOne" class="radio" chec>Personal</label>
+						<input type="radio" value="None" id="radioTwo" name="account" />
+						<label for="radioTwo" class="radio">Company</label>
+					</div>
+					<hr>
+					<label id="icon" for="name"><i class="icon-envelope "></i></label>
+					<input type="text" name="name" id="Regname" placeholder="Name" required />
+	
+					<label id="icon" for="image"><i class="icon-user"></i></label>
+					<input type="text" name="image" id="Regimg1" placeholder="First Image" required />
+	
+					<label id="icon" for="image2"><i class="icon-user"></i></label>
+					<input type="text" name="image2" id="Regimg2" placeholder="Second Image" required />
+	
+					<label id="icon" for="Description"><i class="icon-shield"></i></label>
+					<input type="text" name="Description" id="Regdescription" placeholder="Description" required />
+	
+					<label id="icon" for="price"><i class="icon-user"></i></label>
+					<input type="number" name="price" id="Regprice" placeholder="Price of Land in aettos" required />
+	
+					<div class="gender">
+						<input type="radio" value="None" id="male" name="gender" checked />
+						<label for="male" class="radio" chec>Male</label>
+						<input type="radio" value="None" id="female" name="gender" />
+						<label for="female" class="radio">Female</label>
+					</div>
+					<p>By clicking Register, you agree on our <a href="#">terms and condition</a>.</p>
+					<!-- <a href="index.html" class=" regBtn button">Register</a> -->
+					<div>
+							<button class="regBtns buttons" >Register</button>
+					</div>
+					
+				
+			</div>
 			</div>
 
-		<div id = "formBody">
-			<form >
-				<hr>
-				<div class="accounttype">
-					<input type="radio" value="None" id="radioOne" name="account" checked />
-					<label for="radioOne" class="radio" chec>Personal</label>
-					<input type="radio" value="None" id="radioTwo" name="account" />
-					<label for="radioTwo" class="radio">Company</label>
-				</div>
-				<hr>
-				<label id="icon" for="name"><i class="icon-envelope "></i></label>
-				<input type="text" name="name" id="Regname" placeholder="Name" required />
-
-				<label id="icon" for="image"><i class="icon-user"></i></label>
-				<input type="text" name="image" id="Regimg1" placeholder="First Image" required />
-
-				<label id="icon" for="image2"><i class="icon-user"></i></label>
-				<input type="text" name="image2" id="Regimg2" placeholder="Second Image" required />
-
-				<label id="icon" for="Description"><i class="icon-shield"></i></label>
-				<input type="text" name="Description" id="Regdescription" placeholder="Description" required />
-
-				<label id="icon" for="price"><i class="icon-user"></i></label>
-				<input type="number" name="price" id="Regprice" placeholder="Price of Land in aettos" required />
-
-				<div class="gender">
-					<input type="radio" value="None" id="male" name="gender" checked />
-					<label for="male" class="radio" chec>Male</label>
-					<input type="radio" value="None" id="female" name="gender" />
-					<label for="female" class="radio">Female</label>
-				</div>
-				<p>By clicking Register, you agree on our <a href="#">terms and condition</a>.</p>
-				<!-- <a href="index.html" class=" regBtn button">Register</a> -->
-				<div>
-						<button class="regBtns buttons" >Register</button>
-				</div>
-				
-			</form>
-		</div>
+		
 		
 	
 
