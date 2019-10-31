@@ -174,7 +174,7 @@ $('.regBtns').click(async function(){
   const land_name = ($('#Regname').val());
   const land_image1 = ($("#Regimg").val());
   const land_image2 = ($("#Regimg2").val());
-  const land_price = ($("#regPrice").val());
+  const land_price = ($("#Regprice").val());
   const land_description = ($("#Regdescription").val());
   console.log("-------------------------------------")
   console.log("Name:",land_name)
