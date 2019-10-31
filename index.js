@@ -172,7 +172,7 @@ $('.regBtns').click(async function(){
   $("#loading-bar-spinner").show();
   console.log("Button Clicked")
   const land_name = ($('#Regname').val());
-  const land_image1 = ($("#Regimg1").val());
+  const land_image1 = ($("#Regimg").val());
   const land_image2 = ($("#Regimg2").val());
   const land_price = ($("#regPrice").val());
   const land_description = ($("#Regdescription").val());
@@ -182,7 +182,7 @@ $('.regBtns').click(async function(){
   console.log("Image2:",land_image2)
   
 
-  const new_land = await contractCall('createLand', [land_image1, land_image2, land_name,land_description, land_price],40000);
+  const new_land = await contractCall('createLand', [land_image1, land_image2, land_name,land_description, land_price],parseInt(land_price, 10));
   console.log("SAVED TO THE DB", new_land)
 
   LandArray.push({
